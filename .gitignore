@@ -1,0 +1,64 @@
+# ============================================================
+# GMS — Git Ignore
+# ============================================================
+
+# ── SECRETS — never push these ──────────────────────────────
+.env
+*.env.local
+*.env.production
+*.env.development
+
+# ── Python / Backend ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+*.log
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# ── Node / Frontend ─────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production
+.npm
+*.tsbuildinfo
+
+# ── Docker ──────────────────────────────────────────────────
+# Don't ignore docker-compose.yml — it's safe (no secrets now)
+
+# ── OS files ────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ── Uploads (user data — never in git) ──────────────────────
+backend/uploads/
+uploads/
+
+# ── IDE ─────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── Alembic ─────────────────────────────────────────────────
+# Keep migrations but ignore generated files
+*.pyc
