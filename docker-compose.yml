@@ -66,11 +66,32 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - gms_uploads:/var/uploads:ro
     ports:
-      - "8080:80"
+      # localhost-only: public traffic enters through caddy (:80/:443)
+      - "127.0.0.1:8080:80"
     depends_on:
       - frontend
       - backend
 
+  # HTTPS reverse proxy — auto free Let's Encrypt certificate via SITE_ADDRESS
+  caddy:
+    image: caddy:2-alpine
+    container_name: gms_caddy
+    restart: unless-stopped
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-localhost}
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"   # HTTP/3
+    depends_on:
+      - nginx
+
 volumes:
   gms_pgdata:
   gms_uploads:
+  caddy_data:
+  caddy_config:

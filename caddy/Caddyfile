@@ -1,0 +1,8 @@
+# GMS — Caddy HTTPS proxy
+# SITE_ADDRESS comes from .env, e.g. 139-59-12-34.sslip.io
+# Caddy auto-obtains & renews a free Let's Encrypt certificate.
+{$SITE_ADDRESS}
+
+encode gzip
+
+reverse_proxy nginx:80

@@ -80,9 +80,14 @@ docker compose ps
 
 # ── Get public IP ────────────────────────────────────────────
 PUBLIC_IP=$(curl -s ifconfig.me 2>/dev/null || echo "unknown")
+SITE_ADDRESS=$(grep -E "^SITE_ADDRESS=" .env | cut -d= -f2)
 echo ""
 echo "========================================"
 echo "  Deployment complete!"
-echo "  App URL: http://${PUBLIC_IP}:8080"
-echo "  API Docs: http://${PUBLIC_IP}:8080/api/docs"
+if [ -n "$SITE_ADDRESS" ] && [ "$SITE_ADDRESS" != "localhost" ]; then
+  echo "  App URL (HTTPS): https://${SITE_ADDRESS}"
+else
+  echo "  App URL: http://${PUBLIC_IP}:8080 (localhost only — set SITE_ADDRESS in .env for HTTPS)"
+fi
+echo "  API Docs: http://${PUBLIC_IP}:8080/api/docs (server-local) or https://${SITE_ADDRESS}/api/docs"
 echo "========================================"
