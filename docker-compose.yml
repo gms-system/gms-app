@@ -66,32 +66,27 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - gms_uploads:/var/uploads:ro
     ports:
-      # localhost-only: public traffic enters through caddy (:80/:443)
-      - "127.0.0.1:8080:80"
+      # Also expose on 8080 publicly as fallback (direct IP access)
+      - "8080:80"
     depends_on:
       - frontend
       - backend
 
-  # HTTPS reverse proxy — auto free Let's Encrypt certificate via SITE_ADDRESS
-  caddy:
-    image: caddy:2-alpine
-    container_name: gms_caddy
+  # Cloudflare Tunnel — outbound HTTPS, no inbound ports 80/443 needed.
+  # Set CLOUDFLARE_TUNNEL_TOKEN in .env to activate.
+  # Leave CLOUDFLARE_TUNNEL_TOKEN empty to skip (app still works on :8080).
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: gms_cloudflared
     restart: unless-stopped
+    command: tunnel --no-autoupdate run
     environment:
-      SITE_ADDRESS: ${SITE_ADDRESS:-localhost}
-    volumes:
-      - ./caddy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"   # HTTP/3
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:-}
     depends_on:
       - nginx
+    profiles:
+      - tunnel
 
 volumes:
   gms_pgdata:
   gms_uploads:
-  caddy_data:
-  caddy_config:
