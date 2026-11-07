@@ -13,6 +13,7 @@ from app.models.purchase import PurchaseOrder, PurchaseOrderItem, GRN, GRNItem, 
 from app.models.attendance import Attendance
 from app.models.settings import GarageSettings
 from app.models.audit import AuditLog
+from app.models.catalog import CatalogItem
 
 __all__ = [
     "TimestampMixin",
@@ -30,4 +31,5 @@ __all__ = [
     "Attendance",
     "GarageSettings",
     "AuditLog",
+    "CatalogItem",
 ]

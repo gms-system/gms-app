@@ -1,5 +1,5 @@
 // GMS Service Worker — Cache-first for static assets, network-first for API
-const CACHE_NAME = "gms-v1";
+const CACHE_NAME = "gms-v2";
 const API_ORIGIN = "/api";
 
 // Static assets to pre-cache on install
@@ -61,7 +61,26 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Next.js _next/data and page navigation: network-first, fall back to cache
+  // APK downloads + version manifest: always straight from the network
+  if (url.pathname.startsWith("/downloads/") || url.pathname === "/app-version") return;
+
+  // Page navigations + Next.js assets: network-first (so every deploy reaches
+  // users immediately), fall back to cache, then the offline page.
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request).then((cached) => cached || caches.match("/offline.html")))
+    );
+    return;
+  }
+
   if (url.pathname.startsWith("/_next/") || url.pathname.startsWith("/_next/data/")) {
     event.respondWith(
       fetch(request)

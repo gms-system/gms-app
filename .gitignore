@@ -53,6 +53,21 @@ desktop.ini
 backend/uploads/
 uploads/
 
+# ── Android app — signing keys + build output (never in git) ─
+*.jks
+*.keystore
+mobile/keystore.properties
+mobile/node_modules/
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+downloads/*.apk
+downloads/*.tmp
+downloads/version.json
+mobile/dist/
+dist/
+
 # ── IDE ─────────────────────────────────────────────────────
 .vscode/settings.json
 .idea/

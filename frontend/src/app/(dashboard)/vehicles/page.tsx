@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { Plus, Search, Edit2, Loader2, X, ChevronDown } from "lucide-react";
 import api from "@/lib/api";
 import { FUEL_TYPE_LABELS } from "@/lib/utils";
-import { getMakesForGarageType, getModelsForGarageType } from "@/lib/india-vehicles";
+import { useCatalog, makesForGarageType, modelsForGarageType } from "@/store/catalog-store";
 
 const vehicleSchema = z.object({
   registration_number: z.string().min(1, "Registration number required"),
@@ -69,8 +69,9 @@ function VehicleModal({ vehicle, onClose, garageType = "4_wheeler" }: { vehicle?
     }
   }, [watchedMake]);
 
-  const availableMakes = getMakesForGarageType(garageType);
-  const availableModels = getModelsForGarageType(watchedMake || "", garageType);
+  const catalog = useCatalog();
+  const availableMakes = makesForGarageType(catalog, garageType);
+  const availableModels = modelsForGarageType(catalog, watchedMake || "", garageType);
   const isKnownMake = availableMakes.includes(watchedMake || "");
 
   const mutation = useMutation({

@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.config import settings
 from app.database import engine, Base
-from app.routers import auth, customers, vehicles, job_cards, inventory, employees, attendance, dashboard, settings as settings_router, invoices, purchases, admin, estimates, reports
+from app.routers import auth, customers, vehicles, job_cards, inventory, employees, attendance, dashboard, settings as settings_router, invoices, purchases, admin, estimates, reports, catalog, share
 # Register new models so Alembic can find them
 import app.models.garage  # noqa: F401
 import app.models.super_admin  # noqa: F401
@@ -51,6 +51,8 @@ app.include_router(purchases.router, prefix=API_V1)
 app.include_router(admin.router, prefix=API_V1)
 app.include_router(estimates.router, prefix=API_V1)
 app.include_router(reports.router, prefix=API_V1)
+app.include_router(catalog.router, prefix=API_V1)
+app.include_router(share.router, prefix=API_V1)
 
 
 @app.get("/api/health")

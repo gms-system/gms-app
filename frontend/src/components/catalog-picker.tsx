@@ -1,10 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
-import {
-  SPARE_PARTS, LUBES, PART_VEHICLES, LUBE_BRANDS,
-  type SparePart, type Lube,
-} from "@/lib/parts-catalog";
+import type { SparePart, Lube } from "@/lib/parts-catalog";
+import { useCatalog } from "@/store/catalog-store";
 
 export type CatalogKind = "spare_part" | "lubricant";
 
@@ -56,21 +54,24 @@ const inr = (n: number) => `₹${n.toLocaleString("en-IN")}`;
 export function CatalogPicker({ kind = "both", onSelect, className, compact }: Props) {
   const [activeKind, setActiveKind] = useState<CatalogKind>(kind === "lubricant" ? "lubricant" : "spare_part");
   const [value, setValue] = useState("");
+  const { spare_parts: SPARE_PARTS, lubes: LUBES } = useCatalog();
 
   const groups = useMemo(() => {
     if (activeKind === "spare_part") {
+      const PART_VEHICLES = Array.from(new Set(SPARE_PARTS.map((p) => p.vehicle)));
       return PART_VEHICLES.map((v) => ({
         label: v,
         options: SPARE_PARTS.map((p, i) => ({ p, i })).filter(({ p }) => p.vehicle === v)
           .map(({ p, i }) => ({ value: `sp:${i}`, label: `${p.part} — ${inr(p.selling_price)} (cost ${inr(p.cost_price)})` })),
       }));
     }
+    const LUBE_BRANDS = Array.from(new Set(LUBES.map((l) => l.brand)));
     return LUBE_BRANDS.map((b) => ({
       label: b,
       options: LUBES.map((l, i) => ({ l, i })).filter(({ l }) => l.brand === b)
         .map(({ l, i }) => ({ value: `lb:${i}`, label: `${l.name} ${l.grade} · ${l.type} · ${l.pack} — ${inr(l.selling_price)} (cost ${inr(l.cost_price)})` })),
     }));
-  }, [activeKind]);
+  }, [activeKind, SPARE_PARTS, LUBES]);
 
   function handleChange(v: string) {
     setValue(v);

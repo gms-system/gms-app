@@ -1,0 +1,3004 @@
+{
+ "cars": [
+  {
+   "make": "Maruti Suzuki",
+   "models": [
+    "800",
+    "Alto",
+    "Alto 800",
+    "Alto K10",
+    "WagonR",
+    "WagonR 1.0",
+    "WagonR CNG",
+    "Swift",
+    "Swift Dzire",
+    "Dzire",
+    "Baleno",
+    "Ignis",
+    "Celerio",
+    "Celerio X",
+    "S-Presso",
+    "Ertiga",
+    "XL6",
+    "Brezza",
+    "Vitara Brezza",
+    "Grand Vitara",
+    "Fronx",
+    "Jimny",
+    "Invicto",
+    "Omni",
+    "Eeco",
+    "Ritz",
+    "A-Star",
+    "Zen",
+    "Zen Estilo",
+    "Sx4",
+    "Ciaz",
+    "Kizashi",
+    "Gypsy"
+   ]
+  },
+  {
+   "make": "Hyundai",
+   "models": [
+    "Santro",
+    "Santro Xing",
+    "i10",
+    "Grand i10",
+    "Grand i10 Nios",
+    "i20",
+    "Elite i20",
+    "Active i20",
+    "New i20",
+    "Aura",
+    "Verna",
+    "Creta",
+    "Venue",
+    "Tucson",
+    "Exter",
+    "Alcazar",
+    "Ioniq 5",
+    "Accent",
+    "Getz",
+    "Sonata",
+    "Xcent",
+    "Eon"
+   ]
+  },
+  {
+   "make": "Tata",
+   "models": [
+    "Nano",
+    "Tiago",
+    "Tiago EV",
+    "Tiago NRG",
+    "Tigor",
+    "Tigor EV",
+    "Altroz",
+    "Nexon",
+    "Nexon EV",
+    "Harrier",
+    "Safari",
+    "Punch",
+    "Punch EV",
+    "Curvv",
+    "Curvv EV",
+    "Sierra EV",
+    "Indigo",
+    "Indigo CS",
+    "Indigo Manza",
+    "Indica",
+    "Indica Vista",
+    "Sumo",
+    "Sumo Gold",
+    "Sumo Grande",
+    "Safari Storme",
+    "Aria",
+    "Bolt",
+    "Zest",
+    "Hexa",
+    "Xenon"
+   ]
+  },
+  {
+   "make": "Mahindra",
+   "models": [
+    "Thar",
+    "Thar Roxx",
+    "Scorpio",
+    "Scorpio Classic",
+    "Scorpio N",
+    "XUV700",
+    "XUV400",
+    "XUV300",
+    "XUV500",
+    "Bolero",
+    "Bolero Neo",
+    "Bolero Plus",
+    "KUV100",
+    "KUV100 NXT",
+    "Marazzo",
+    "Alturas G4",
+    "BE 6e",
+    "XEV 9e",
+    "Verito",
+    "Verito Vibe",
+    "Quanto",
+    "Xylo",
+    "Renault Logan",
+    "TUV300",
+    "e2o",
+    "e2o Plus",
+    "eVerito"
+   ]
+  },
+  {
+   "make": "Honda",
+   "models": [
+    "City",
+    "City Hybrid",
+    "Amaze",
+    "Jazz",
+    "WR-V",
+    "Elevate",
+    "Civic",
+    "Accord",
+    "CR-V",
+    "BR-V",
+    "HR-V",
+    "Brio",
+    "Mobilio"
+   ]
+  },
+  {
+   "make": "Toyota",
+   "models": [
+    "Innova",
+    "Innova Crysta",
+    "Innova HyCross",
+    "Fortuner",
+    "Fortuner Legender",
+    "Hilux",
+    "Land Cruiser",
+    "Land Cruiser Prado",
+    "Camry",
+    "Camry Hybrid",
+    "Corolla",
+    "Corolla Altis",
+    "Etios",
+    "Etios Liva",
+    "Etios Cross",
+    "Glanza",
+    "Urban Cruiser",
+    "Urban Cruiser Hyryder",
+    "Rumion",
+    "Vellfire",
+    "Yaris",
+    "Qualis"
+   ]
+  },
+  {
+   "make": "Kia",
+   "models": [
+    "Seltos",
+    "Sonet",
+    "Carens",
+    "EV6",
+    "Carnival"
+   ]
+  },
+  {
+   "make": "MG",
+   "models": [
+    "Hector",
+    "Hector Plus",
+    "Astor",
+    "ZS EV",
+    "Comet EV",
+    "Gloster",
+    "Windsor EV"
+   ]
+  },
+  {
+   "make": "Volkswagen",
+   "models": [
+    "Polo",
+    "Vento",
+    "Taigun",
+    "Virtus",
+    "Tiguan",
+    "T-Roc",
+    "Passat",
+    "Jetta",
+    "Ameo"
+   ]
+  },
+  {
+   "make": "Skoda",
+   "models": [
+    "Kushaq",
+    "Slavia",
+    "Octavia",
+    "Superb",
+    "Kodiaq",
+    "Rapid",
+    "Fabia",
+    "Yeti"
+   ]
+  },
+  {
+   "make": "Renault",
+   "models": [
+    "Kwid",
+    "Triber",
+    "Kiger",
+    "Duster",
+    "Captur",
+    "Scala",
+    "Lodgy",
+    "Pulse",
+    "Fluence",
+    "Koleos"
+   ]
+  },
+  {
+   "make": "Nissan",
+   "models": [
+    "Magnite",
+    "Kicks",
+    "X-Trail",
+    "Terrano",
+    "Micra",
+    "Sunny",
+    "Evalia",
+    "GT-R"
+   ]
+  },
+  {
+   "make": "Ford",
+   "models": [
+    "Figo",
+    "Figo Aspire",
+    "Freestyle",
+    "EcoSport",
+    "Endeavour",
+    "Mustang",
+    "Fiesta",
+    "Ikon",
+    "Fusion"
+   ]
+  },
+  {
+   "make": "Jeep",
+   "models": [
+    "Compass",
+    "Meridian",
+    "Wrangler",
+    "Grand Cherokee",
+    "Renegade"
+   ]
+  },
+  {
+   "make": "BMW",
+   "models": [
+    "1 Series",
+    "2 Series",
+    "3 Series",
+    "4 Series",
+    "5 Series",
+    "6 Series",
+    "7 Series",
+    "8 Series",
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6",
+    "X7",
+    "iX",
+    "iX1",
+    "iX3",
+    "i4",
+    "i5",
+    "i7",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "Z4"
+   ]
+  },
+  {
+   "make": "Mercedes-Benz",
+   "models": [
+    "A-Class",
+    "B-Class",
+    "C-Class",
+    "E-Class",
+    "S-Class",
+    "CLA",
+    "CLS",
+    "GLA",
+    "GLB",
+    "GLC",
+    "GLE",
+    "GLS",
+    "G-Class",
+    "EQS",
+    "EQB",
+    "EQE",
+    "AMG GT",
+    "Maybach S-Class",
+    "Maybach GLS",
+    "V-Class"
+   ]
+  },
+  {
+   "make": "Audi",
+   "models": [
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "Q2",
+    "Q3",
+    "Q5",
+    "Q7",
+    "Q8",
+    "e-tron",
+    "e-tron GT",
+    "Q8 e-tron",
+    "RS5",
+    "RS7",
+    "R8",
+    "TT"
+   ]
+  },
+  {
+   "make": "Volvo",
+   "models": [
+    "XC40",
+    "XC60",
+    "XC90",
+    "S60",
+    "S90",
+    "V40",
+    "C40 Recharge"
+   ]
+  },
+  {
+   "make": "Jaguar",
+   "models": [
+    "XE",
+    "XF",
+    "XJ",
+    "F-Type",
+    "E-Pace",
+    "F-Pace",
+    "I-Pace"
+   ]
+  },
+  {
+   "make": "Land Rover",
+   "models": [
+    "Defender",
+    "Discovery",
+    "Discovery Sport",
+    "Range Rover",
+    "Range Rover Sport",
+    "Range Rover Velar",
+    "Range Rover Evoque"
+   ]
+  },
+  {
+   "make": "Porsche",
+   "models": [
+    "Cayenne",
+    "Macan",
+    "Panamera",
+    "911",
+    "718 Boxster",
+    "718 Cayman",
+    "Taycan"
+   ]
+  },
+  {
+   "make": "Lamborghini",
+   "models": [
+    "Urus",
+    "Huracan",
+    "Aventador",
+    "Revuelto"
+   ]
+  },
+  {
+   "make": "Ferrari",
+   "models": [
+    "Roma",
+    "Portofino",
+    "SF90",
+    "812",
+    "296 GTB"
+   ]
+  },
+  {
+   "make": "Maserati",
+   "models": [
+    "Ghibli",
+    "Quattroporte",
+    "Levante",
+    "GranTurismo",
+    "Grecale"
+   ]
+  },
+  {
+   "make": "Isuzu",
+   "models": [
+    "D-Max",
+    "D-Max V-Cross",
+    "MU-X"
+   ]
+  },
+  {
+   "make": "Citroen",
+   "models": [
+    "C3",
+    "C3 Aircross",
+    "eC3",
+    "C5 Aircross"
+   ]
+  },
+  {
+   "make": "Lexus",
+   "models": [
+    "ES",
+    "LS",
+    "LX",
+    "NX",
+    "RX",
+    "UX",
+    "LC",
+    "LM",
+    "RZ"
+   ]
+  },
+  {
+   "make": "BYD",
+   "models": [
+    "Atto 3",
+    "Seal",
+    "Sealion 6"
+   ]
+  },
+  {
+   "make": "Fiat",
+   "models": [
+    "Punto",
+    "Linea",
+    "Avventura",
+    "Abarth 595",
+    "Abarth Punto"
+   ]
+  },
+  {
+   "make": "Mitsubishi",
+   "models": [
+    "Outlander",
+    "Pajero Sport",
+    "Eclipse Cross",
+    "Cedia"
+   ]
+  },
+  {
+   "make": "Chevrolet",
+   "models": [
+    "Beat",
+    "Spark",
+    "Cruze",
+    "Aveo",
+    "Optra",
+    "Tavera",
+    "Trailblazer",
+    "Captiva",
+    "Sail"
+   ]
+  },
+  {
+   "make": "Hindustan Motors",
+   "models": [
+    "Ambassador",
+    "Contessa"
+   ]
+  },
+  {
+   "make": "Datsun",
+   "models": [
+    "Go",
+    "Go+",
+    "redi-Go"
+   ]
+  },
+  {
+   "make": "Ola Electric",
+   "models": [
+    "S1",
+    "S1 Pro",
+    "S1 Air",
+    "S1 X"
+   ]
+  }
+ ],
+ "two_wheelers": [
+  {
+   "make": "Hero",
+   "models": [
+    "Splendor Plus",
+    "Splendor Pro",
+    "Splendor iSmart",
+    "Super Splendor",
+    "HF Dawn",
+    "HF Deluxe",
+    "HF 100",
+    "Passion Pro",
+    "Passion XPro",
+    "Glamour",
+    "Glamour Xtec",
+    "Xpulse 200",
+    "Xpulse 200T",
+    "Xpulse 200 4V",
+    "Xtreme 125R",
+    "Xtreme 160R",
+    "Xtreme 200R",
+    "Xtreme 200S",
+    "Hunk",
+    "Ignitor",
+    "CD 100",
+    "CD Dawn",
+    "CD Deluxe",
+    "Karizma",
+    "Karizma R",
+    "Karizma ZMR",
+    "Achiever",
+    "Pleasure",
+    "Pleasure Plus",
+    "Pleasure Plus Xtec",
+    "Maestro Edge",
+    "Maestro Edge 110",
+    "Maestro Edge 125",
+    "Destini 125",
+    "Destini 125 Prime",
+    "Xoom 80",
+    "Xoom 110"
+   ]
+  },
+  {
+   "make": "Honda",
+   "models": [
+    "Shine",
+    "Shine 125",
+    "SP 125",
+    "SP 160",
+    "Unicorn",
+    "Unicorn 150",
+    "Unicorn 160",
+    "CB Shine",
+    "CB300F",
+    "CB300R",
+    "CB350",
+    "CB350RS",
+    "CB500F",
+    "CB500X",
+    "Hornet 2.0",
+    "Hornet 160R",
+    "X-Blade",
+    "Livo",
+    "Dream Neo",
+    "Dream Yuga",
+    "Dream 110",
+    "Trigger",
+    "CBR 150R",
+    "CBR 250R",
+    "CBR 650R",
+    "Africa Twin",
+    "Gold Wing",
+    "Activa 3G",
+    "Activa 4G",
+    "Activa 5G",
+    "Activa 6G",
+    "Activa 125",
+    "Dio",
+    "Dio 110",
+    "Cliq",
+    "Grazia",
+    "Grazia 125",
+    "Aviator",
+    "Navi",
+    "Eterno"
+   ]
+  },
+  {
+   "make": "Bajaj",
+   "models": [
+    "Pulsar 125",
+    "Pulsar 150",
+    "Pulsar 150 Neon",
+    "Pulsar 180",
+    "Pulsar N160",
+    "Pulsar N250",
+    "Pulsar F250",
+    "Pulsar NS160",
+    "Pulsar NS200",
+    "Pulsar RS200",
+    "Pulsar 220F",
+    "Avenger Street 160",
+    "Avenger Street 220",
+    "Avenger Cruise 220",
+    "Dominar 250",
+    "Dominar 400",
+    "CT 100",
+    "CT 110",
+    "CT 110X",
+    "Platina 100",
+    "Platina 110",
+    "Boxer 100",
+    "Discover 100",
+    "Discover 110",
+    "Discover 125",
+    "Discover 150",
+    "V12",
+    "V15",
+    "Bike Chetak (Old)",
+    "Chetak EV"
+   ]
+  },
+  {
+   "make": "TVS",
+   "models": [
+    "Apache RTR 160",
+    "Apache RTR 160 4V",
+    "Apache RTR 180",
+    "Apache RTR 200 4V",
+    "Apache RR 310",
+    "Raider 125",
+    "Radeon",
+    "Star City Plus",
+    "Sport",
+    "HLX 125",
+    "Victor",
+    "Flame",
+    "Fiero",
+    "Max 4R",
+    "Jupiter",
+    "Jupiter 125",
+    "Jupiter ZX",
+    "Ntorq 125",
+    "Ntorq 125 Race XP",
+    "Zest 110",
+    "Wego",
+    "Scooty Pep+",
+    "Scooty Streak",
+    "Scooty Zest",
+    "iQube",
+    "iQube S",
+    "iQube ST",
+    "XL 100"
+   ]
+  },
+  {
+   "make": "Royal Enfield",
+   "models": [
+    "Bullet 350",
+    "Bullet 500",
+    "Classic 350",
+    "Classic 500",
+    "Meteor 350",
+    "Hunter 350",
+    "Thunderbird 350",
+    "Thunderbird 500",
+    "Thunderbird X 350",
+    "Thunderbird X 500",
+    "Himalayan",
+    "Himalayan 450",
+    "Interceptor 650",
+    "Continental GT 650",
+    "Super Meteor 650",
+    "Shotgun 650",
+    "Scram 411"
+   ]
+  },
+  {
+   "make": "Yamaha",
+   "models": [
+    "FZ-S V3",
+    "FZS-FI V3",
+    "FZX",
+    "R15 V3",
+    "R15 V4",
+    "R15M",
+    "R15S",
+    "MT-03",
+    "MT-07",
+    "MT-09",
+    "MT-15",
+    "YZF R3",
+    "SZ-RR",
+    "SZ-X",
+    "FZ16",
+    "FZ25",
+    "FZS25",
+    "Saluto",
+    "Saluto RX",
+    "Fazer 25",
+    "Fascino",
+    "Fascino 125",
+    "Ray-Z",
+    "Ray-ZR",
+    "Ray-ZR 125",
+    "Aerox 155",
+    "Cygnus Alpha"
+   ]
+  },
+  {
+   "make": "Suzuki",
+   "models": [
+    "Gixxer",
+    "Gixxer SF",
+    "Gixxer 250",
+    "Gixxer SF 250",
+    "V-Strom 650XT",
+    "V-Strom SX",
+    "Intruder",
+    "Intruder 150",
+    "Hayabusa",
+    "Katana",
+    "GS150R",
+    "Access 125",
+    "Access 125 SE",
+    "Burgman Street 125",
+    "Let's",
+    "Swish 125",
+    "Avenis 125"
+   ]
+  },
+  {
+   "make": "KTM",
+   "models": [
+    "Duke 125",
+    "Duke 200",
+    "Duke 250",
+    "Duke 390",
+    "RC 125",
+    "RC 200",
+    "RC 390",
+    "Adventure 250",
+    "Adventure 390"
+   ]
+  },
+  {
+   "make": "Kawasaki",
+   "models": [
+    "Ninja 300",
+    "Ninja 400",
+    "Ninja 650",
+    "Ninja ZX-6R",
+    "Ninja ZX-10R",
+    "Z400",
+    "Z650",
+    "Z900",
+    "Versys 650",
+    "Versys-X 300",
+    "W175",
+    "W800"
+   ]
+  },
+  {
+   "make": "Triumph",
+   "models": [
+    "Speed 400",
+    "Scrambler 400 X",
+    "Street Triple",
+    "Speed Triple",
+    "Tiger 900",
+    "Tiger 1200",
+    "Bonneville T100",
+    "Bonneville T120",
+    "Thruxton"
+   ]
+  },
+  {
+   "make": "Harley-Davidson",
+   "models": [
+    "X440",
+    "Fat Boy",
+    "Street Bob",
+    "Road Glide",
+    "Road King",
+    "Iron 883",
+    "Iron 1200",
+    "Forty-Eight",
+    "Street 750",
+    "Street Rod"
+   ]
+  },
+  {
+   "make": "BMW Motorrad",
+   "models": [
+    "G 310 R",
+    "G 310 GS",
+    "S 1000 RR",
+    "S 1000 R",
+    "R 1250 GS",
+    "F 900 R",
+    "F 900 XR"
+   ]
+  },
+  {
+   "make": "Ducati",
+   "models": [
+    "Monster",
+    "Panigale V2",
+    "Panigale V4",
+    "Multistrada V2",
+    "Scrambler"
+   ]
+  },
+  {
+   "make": "Jawa",
+   "models": [
+    "Jawa 42",
+    "Jawa 42 Bobber",
+    "Perak",
+    "Classic Jawa"
+   ]
+  },
+  {
+   "make": "Yezdi",
+   "models": [
+    "Roadster",
+    "Scrambler",
+    "Adventure"
+   ]
+  },
+  {
+   "make": "Ather",
+   "models": [
+    "450X",
+    "450 Plus",
+    "450 Apex",
+    "450S",
+    "Rizta"
+   ]
+  },
+  {
+   "make": "Ola Electric",
+   "models": [
+    "S1",
+    "S1 Pro",
+    "S1 Air",
+    "S1 X",
+    "S1 X+"
+   ]
+  },
+  {
+   "make": "Revolt",
+   "models": [
+    "RV300",
+    "RV400",
+    "RV400 BRZ"
+   ]
+  },
+  {
+   "make": "Ampere",
+   "models": [
+    "Magnus EX",
+    "Zeal EX",
+    "Nexus",
+    "V48"
+   ]
+  },
+  {
+   "make": "Kinetic",
+   "models": [
+    "Kinetic Green Zing",
+    "Kinetic Green Flex",
+    "Honda Kinetic (Old)"
+   ]
+  },
+  {
+   "make": "LML",
+   "models": [
+    "Star Euro",
+    "Freedom",
+    "Select"
+   ]
+  }
+ ],
+ "spare_parts": [
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Clutch Plate",
+   "cost_price": 6300,
+   "selling_price": 7000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Pressure Plate",
+   "cost_price": 2800,
+   "selling_price": 3300,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Clutch Release Bearing",
+   "cost_price": 650,
+   "selling_price": 850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 900,
+   "selling_price": 1200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 750,
+   "selling_price": 1000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Air Filter",
+   "cost_price": 220,
+   "selling_price": 350,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Oil Filter",
+   "cost_price": 180,
+   "selling_price": 280,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Fuel Filter",
+   "cost_price": 450,
+   "selling_price": 650,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Spark Plug (Each)",
+   "cost_price": 160,
+   "selling_price": 250,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 450,
+   "selling_price": 700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Battery 35Ah",
+   "cost_price": 3600,
+   "selling_price": 4500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Front Shock Absorber (Each)",
+   "cost_price": 1500,
+   "selling_price": 2000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Rear Shock Absorber (Each)",
+   "cost_price": 1100,
+   "selling_price": 1500,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Headlight Bulb H4",
+   "cost_price": 180,
+   "selling_price": 300,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Timing Belt",
+   "cost_price": 850,
+   "selling_price": 1200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Alto",
+   "part": "Radiator Fan Motor",
+   "cost_price": 1800,
+   "selling_price": 2400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Clutch Plate",
+   "cost_price": 3200,
+   "selling_price": 4000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Pressure Plate",
+   "cost_price": 3000,
+   "selling_price": 3800,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Clutch Release Bearing",
+   "cost_price": 800,
+   "selling_price": 1050,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1000,
+   "selling_price": 1350,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Air Filter",
+   "cost_price": 350,
+   "selling_price": 500,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Oil Filter",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Fuel Filter",
+   "cost_price": 600,
+   "selling_price": 850,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Spark Plug (Each)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 550,
+   "selling_price": 850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Front Shock Absorber (Each)",
+   "cost_price": 2200,
+   "selling_price": 2900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Rear Shock Absorber (Each)",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Headlight Assembly",
+   "cost_price": 3800,
+   "selling_price": 4800,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Front Bumper",
+   "cost_price": 3200,
+   "selling_price": 4200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Swift",
+   "part": "Side Mirror (Each)",
+   "cost_price": 1400,
+   "selling_price": 1900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Clutch Plate",
+   "cost_price": 2900,
+   "selling_price": 3600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Pressure Plate",
+   "cost_price": 2700,
+   "selling_price": 3300,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1000,
+   "selling_price": 1350,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 850,
+   "selling_price": 1150,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Air Filter",
+   "cost_price": 280,
+   "selling_price": 420,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Oil Filter",
+   "cost_price": 200,
+   "selling_price": 300,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Spark Plug (Each)",
+   "cost_price": 180,
+   "selling_price": 270,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 480,
+   "selling_price": 750,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Battery 35Ah",
+   "cost_price": 3600,
+   "selling_price": 4500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Front Shock Absorber (Each)",
+   "cost_price": 1700,
+   "selling_price": 2250,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki WagonR",
+   "part": "Headlight Bulb H4",
+   "cost_price": 180,
+   "selling_price": 300,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Clutch Plate",
+   "cost_price": 3200,
+   "selling_price": 4000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Pressure Plate",
+   "cost_price": 3000,
+   "selling_price": 3800,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1000,
+   "selling_price": 1350,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Air Filter",
+   "cost_price": 350,
+   "selling_price": 500,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Oil Filter",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Spark Plug (Each)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Maruti Suzuki Dzire",
+   "part": "Front Shock Absorber (Each)",
+   "cost_price": 2200,
+   "selling_price": 2900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Clutch Plate",
+   "cost_price": 3500,
+   "selling_price": 4400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Pressure Plate",
+   "cost_price": 3200,
+   "selling_price": 4000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1500,
+   "selling_price": 1950,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1200,
+   "selling_price": 1600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Air Filter",
+   "cost_price": 400,
+   "selling_price": 580,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Oil Filter",
+   "cost_price": 240,
+   "selling_price": 350,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Spark Plug (Each)",
+   "cost_price": 260,
+   "selling_price": 380,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Maruti Suzuki Baleno",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 600,
+   "selling_price": 900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Clutch Plate",
+   "cost_price": 4200,
+   "selling_price": 5200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Pressure Plate",
+   "cost_price": 3800,
+   "selling_price": 4700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1700,
+   "selling_price": 2200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Air Filter",
+   "cost_price": 450,
+   "selling_price": 650,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Oil Filter",
+   "cost_price": 260,
+   "selling_price": 380,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Maruti Suzuki Ertiga",
+   "part": "Battery 55Ah",
+   "cost_price": 5800,
+   "selling_price": 7000,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Clutch Plate",
+   "cost_price": 3400,
+   "selling_price": 4200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Pressure Plate",
+   "cost_price": 3100,
+   "selling_price": 3900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1400,
+   "selling_price": 1850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1100,
+   "selling_price": 1450,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Air Filter",
+   "cost_price": 380,
+   "selling_price": 550,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Oil Filter",
+   "cost_price": 230,
+   "selling_price": 340,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Spark Plug (Each)",
+   "cost_price": 240,
+   "selling_price": 350,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 550,
+   "selling_price": 850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Hyundai i10 / Grand i10",
+   "part": "Front Shock Absorber (Each)",
+   "cost_price": 2300,
+   "selling_price": 3000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Clutch Plate",
+   "cost_price": 3800,
+   "selling_price": 4700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Pressure Plate",
+   "cost_price": 3500,
+   "selling_price": 4300,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Air Filter",
+   "cost_price": 420,
+   "selling_price": 600,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Oil Filter",
+   "cost_price": 250,
+   "selling_price": 360,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Spark Plug (Each)",
+   "cost_price": 280,
+   "selling_price": 400,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Hyundai i20",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Clutch Plate",
+   "cost_price": 5200,
+   "selling_price": 6400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Pressure Plate",
+   "cost_price": 4600,
+   "selling_price": 5700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2200,
+   "selling_price": 2850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1800,
+   "selling_price": 2350,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Air Filter",
+   "cost_price": 550,
+   "selling_price": 780,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Oil Filter",
+   "cost_price": 320,
+   "selling_price": 450,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Battery 65Ah",
+   "cost_price": 6800,
+   "selling_price": 8200,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Hyundai Creta",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 750,
+   "selling_price": 1100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Clutch Plate",
+   "cost_price": 4800,
+   "selling_price": 5900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Pressure Plate",
+   "cost_price": 4200,
+   "selling_price": 5200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2000,
+   "selling_price": 2600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Air Filter",
+   "cost_price": 500,
+   "selling_price": 720,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Oil Filter",
+   "cost_price": 300,
+   "selling_price": 430,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Nexon",
+   "part": "Battery 55Ah",
+   "cost_price": 5800,
+   "selling_price": 7000,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Clutch Plate",
+   "cost_price": 3600,
+   "selling_price": 4500,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1500,
+   "selling_price": 1950,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1200,
+   "selling_price": 1600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Air Filter",
+   "cost_price": 420,
+   "selling_price": 600,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Oil Filter",
+   "cost_price": 260,
+   "selling_price": 380,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Punch",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Clutch Plate",
+   "cost_price": 3300,
+   "selling_price": 4100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1050,
+   "selling_price": 1400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Air Filter",
+   "cost_price": 380,
+   "selling_price": 550,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Oil Filter",
+   "cost_price": 240,
+   "selling_price": 350,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Tata Tiago",
+   "part": "Battery 35Ah",
+   "cost_price": 3600,
+   "selling_price": 4500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Clutch Plate",
+   "cost_price": 4500,
+   "selling_price": 5600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Pressure Plate",
+   "cost_price": 4000,
+   "selling_price": 5000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2000,
+   "selling_price": 2600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Air Filter",
+   "cost_price": 500,
+   "selling_price": 720,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Oil Filter",
+   "cost_price": 320,
+   "selling_price": 450,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Spark Plug Iridium (Each)",
+   "cost_price": 650,
+   "selling_price": 900,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Honda City",
+   "part": "Wiper Blade (Pair)",
+   "cost_price": 700,
+   "selling_price": 1050,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Clutch Plate",
+   "cost_price": 3800,
+   "selling_price": 4700,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1200,
+   "selling_price": 1600,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Air Filter",
+   "cost_price": 450,
+   "selling_price": 650,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Oil Filter",
+   "cost_price": 300,
+   "selling_price": 430,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Honda Amaze",
+   "part": "Battery 45Ah",
+   "cost_price": 4800,
+   "selling_price": 5800,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Clutch Plate",
+   "cost_price": 6500,
+   "selling_price": 8000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Pressure Plate",
+   "cost_price": 5800,
+   "selling_price": 7200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2600,
+   "selling_price": 3400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 2100,
+   "selling_price": 2750,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Air Filter",
+   "cost_price": 650,
+   "selling_price": 920,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Oil Filter",
+   "cost_price": 380,
+   "selling_price": 540,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Mahindra XUV300 / XUV700",
+   "part": "Battery 65Ah",
+   "cost_price": 6800,
+   "selling_price": 8200,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Clutch Plate",
+   "cost_price": 5800,
+   "selling_price": 7200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Pressure Plate",
+   "cost_price": 5200,
+   "selling_price": 6500,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2400,
+   "selling_price": 3100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 1900,
+   "selling_price": 2500,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Air Filter",
+   "cost_price": 600,
+   "selling_price": 850,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Oil Filter",
+   "cost_price": 350,
+   "selling_price": 500,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Diesel Filter",
+   "cost_price": 900,
+   "selling_price": 1250,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Mahindra Scorpio / Bolero",
+   "part": "Battery 75Ah",
+   "cost_price": 7800,
+   "selling_price": 9400,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Clutch Plate",
+   "cost_price": 7200,
+   "selling_price": 8900,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Pressure Plate",
+   "cost_price": 6500,
+   "selling_price": 8000,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 3200,
+   "selling_price": 4100,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 2600,
+   "selling_price": 3400,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Air Filter",
+   "cost_price": 750,
+   "selling_price": 1050,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Oil Filter",
+   "cost_price": 420,
+   "selling_price": 600,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Diesel Filter",
+   "cost_price": 1400,
+   "selling_price": 1900,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Toyota Innova Crysta",
+   "part": "Battery 75Ah",
+   "cost_price": 7800,
+   "selling_price": 9400,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Clutch Plate",
+   "cost_price": 5000,
+   "selling_price": 6200,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 2200,
+   "selling_price": 2850,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Rear Brake Pads (Set)",
+   "cost_price": 1800,
+   "selling_price": 2350,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Air Filter",
+   "cost_price": 550,
+   "selling_price": 780,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Oil Filter",
+   "cost_price": 320,
+   "selling_price": 450,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Kia Seltos / Sonet",
+   "part": "Battery 65Ah",
+   "cost_price": 6800,
+   "selling_price": 8200,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Clutch Plate",
+   "cost_price": 2800,
+   "selling_price": 3500,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Front Brake Pads (Set)",
+   "cost_price": 950,
+   "selling_price": 1250,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Rear Brake Shoes (Set)",
+   "cost_price": 800,
+   "selling_price": 1050,
+   "hsn_code": "8708"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Air Filter",
+   "cost_price": 250,
+   "selling_price": 380,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Oil Filter",
+   "cost_price": 190,
+   "selling_price": 290,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Renault Kwid",
+   "part": "Battery 35Ah",
+   "cost_price": 3600,
+   "selling_price": 4500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Front Brake Shoe (Set)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Rear Brake Shoe (Set)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Drive Belt",
+   "cost_price": 650,
+   "selling_price": 900,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Clutch Shoe / Weight Roller Set",
+   "cost_price": 550,
+   "selling_price": 780,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Air Filter",
+   "cost_price": 180,
+   "selling_price": 280,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Spark Plug",
+   "cost_price": 90,
+   "selling_price": 150,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Battery 5Ah",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Headlight Bulb",
+   "cost_price": 90,
+   "selling_price": 160,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Side Mirror (Each)",
+   "cost_price": 180,
+   "selling_price": 280,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Honda Activa",
+   "part": "Tyre 90/100-10 (Each)",
+   "cost_price": 1150,
+   "selling_price": 1500,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Clutch Plate (Set)",
+   "cost_price": 380,
+   "selling_price": 520,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Brake Shoe (Set)",
+   "cost_price": 180,
+   "selling_price": 270,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Chain Sprocket Kit",
+   "cost_price": 850,
+   "selling_price": 1200,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Air Filter",
+   "cost_price": 120,
+   "selling_price": 190,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Spark Plug",
+   "cost_price": 80,
+   "selling_price": 130,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Battery 4Ah",
+   "cost_price": 1100,
+   "selling_price": 1450,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Clutch Cable",
+   "cost_price": 110,
+   "selling_price": 180,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Accelerator Cable",
+   "cost_price": 100,
+   "selling_price": 160,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Headlight Bulb",
+   "cost_price": 80,
+   "selling_price": 140,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Hero Splendor / HF Deluxe",
+   "part": "Tyre 2.75-18 (Each)",
+   "cost_price": 1050,
+   "selling_price": 1400,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Clutch Plate (Set)",
+   "cost_price": 550,
+   "selling_price": 750,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Brake Pads Front (Set)",
+   "cost_price": 280,
+   "selling_price": 400,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Brake Shoe Rear (Set)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Chain Sprocket Kit",
+   "cost_price": 1250,
+   "selling_price": 1700,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Air Filter",
+   "cost_price": 200,
+   "selling_price": 300,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Spark Plug",
+   "cost_price": 110,
+   "selling_price": 180,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Battery 9Ah",
+   "cost_price": 1900,
+   "selling_price": 2500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Clutch Cable",
+   "cost_price": 150,
+   "selling_price": 240,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Bajaj Pulsar 150 / 125",
+   "part": "Headlight Bulb",
+   "cost_price": 120,
+   "selling_price": 200,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Brake Shoe (Set)",
+   "cost_price": 220,
+   "selling_price": 320,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Drive Belt",
+   "cost_price": 600,
+   "selling_price": 850,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Weight Roller Set",
+   "cost_price": 300,
+   "selling_price": 450,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Air Filter",
+   "cost_price": 170,
+   "selling_price": 260,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Spark Plug",
+   "cost_price": 90,
+   "selling_price": 150,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "TVS Jupiter",
+   "part": "Battery 5Ah",
+   "cost_price": 1300,
+   "selling_price": 1700,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Clutch Plate (Set)",
+   "cost_price": 1400,
+   "selling_price": 1850,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Brake Pads Front (Set)",
+   "cost_price": 550,
+   "selling_price": 750,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Brake Pads Rear (Set)",
+   "cost_price": 450,
+   "selling_price": 620,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Chain Sprocket Kit",
+   "cost_price": 2400,
+   "selling_price": 3100,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Air Filter",
+   "cost_price": 350,
+   "selling_price": 500,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Oil Filter",
+   "cost_price": 180,
+   "selling_price": 280,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Spark Plug",
+   "cost_price": 220,
+   "selling_price": 330,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Royal Enfield Classic 350",
+   "part": "Battery 12Ah",
+   "cost_price": 2800,
+   "selling_price": 3500,
+   "hsn_code": "8507"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Clutch Plate (Set)",
+   "cost_price": 750,
+   "selling_price": 1000,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Brake Pads Front (Set)",
+   "cost_price": 350,
+   "selling_price": 480,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Brake Pads Rear (Set)",
+   "cost_price": 300,
+   "selling_price": 420,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Chain Sprocket Kit",
+   "cost_price": 1600,
+   "selling_price": 2100,
+   "hsn_code": "8714"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Air Filter",
+   "cost_price": 260,
+   "selling_price": 380,
+   "hsn_code": "8421"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Spark Plug",
+   "cost_price": 150,
+   "selling_price": 240,
+   "hsn_code": "8511"
+  },
+  {
+   "vehicle": "Yamaha FZ / R15",
+   "part": "Battery 7Ah",
+   "cost_price": 1700,
+   "selling_price": 2200,
+   "hsn_code": "8507"
+  }
+ ],
+ "lubes": [
+  {
+   "brand": "Castrol",
+   "name": "Castrol GTX",
+   "grade": "20W-50",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1150,
+   "selling_price": 1450,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Magnatec",
+   "grade": "10W-30",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1700,
+   "selling_price": 2100,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Magnatec",
+   "grade": "10W-40",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1700,
+   "selling_price": 2100,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Magnatec",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2300,
+   "selling_price": 2850,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol EDGE",
+   "grade": "0W-20",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2900,
+   "selling_price": 3600,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol EDGE",
+   "grade": "5W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2800,
+   "selling_price": 3450,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Activ 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 330,
+   "selling_price": 420,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Power1 4T",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Synthetic)",
+   "pack": "1 L",
+   "cost_price": 520,
+   "selling_price": 650,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Brake Fluid",
+   "grade": "DOT 4",
+   "type": "Brake Fluid",
+   "pack": "500 ml",
+   "cost_price": 220,
+   "selling_price": 300,
+   "hsn_code": "3819"
+  },
+  {
+   "brand": "Castrol",
+   "name": "Castrol Radicool",
+   "grade": "Ready-to-use",
+   "type": "Coolant",
+   "pack": "1 L",
+   "cost_price": 260,
+   "selling_price": 350,
+   "hsn_code": "3820"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix HX3",
+   "grade": "20W-50",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1100,
+   "selling_price": 1400,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix HX5",
+   "grade": "15W-40",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1250,
+   "selling_price": 1550,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix HX7",
+   "grade": "10W-40",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1750,
+   "selling_price": 2150,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix HX7",
+   "grade": "5W-30",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1850,
+   "selling_price": 2300,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix Ultra",
+   "grade": "5W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2850,
+   "selling_price": 3500,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Helix Ultra",
+   "grade": "0W-20",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 3000,
+   "selling_price": 3700,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Advance AX5",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 320,
+   "selling_price": 410,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Advance Ultra",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Synthetic)",
+   "pack": "1 L",
+   "cost_price": 560,
+   "selling_price": 700,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Shell",
+   "name": "Shell Spirax",
+   "grade": "80W-90",
+   "type": "Gear Oil",
+   "pack": "1 L",
+   "cost_price": 350,
+   "selling_price": 460,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil Super 1000",
+   "grade": "20W-50",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1150,
+   "selling_price": 1450,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil Super 2000",
+   "grade": "10W-40",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1800,
+   "selling_price": 2200,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil Super 3000",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2400,
+   "selling_price": 2950,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil 1",
+   "grade": "0W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "4 L",
+   "cost_price": 3600,
+   "selling_price": 4400,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil 1",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "4 L",
+   "cost_price": 3400,
+   "selling_price": 4200,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil Super Moto",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 340,
+   "selling_price": 430,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Mobil",
+   "name": "Mobil ATF 320",
+   "grade": "Dexron III",
+   "type": "ATF (Automatic Transmission)",
+   "pack": "1 L",
+   "cost_price": 480,
+   "selling_price": 620,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 3000 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W Mineral)",
+   "pack": "1 L",
+   "cost_price": 360,
+   "selling_price": 460,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 5100 4T",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Semi-Synthetic)",
+   "pack": "1 L",
+   "cost_price": 560,
+   "selling_price": 700,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 7100 4T",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Fully Synthetic)",
+   "pack": "1 L",
+   "cost_price": 900,
+   "selling_price": 1150,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 300V",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Racing)",
+   "pack": "1 L",
+   "cost_price": 1500,
+   "selling_price": 1850,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 6100 Synergie+",
+   "grade": "10W-40",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1900,
+   "selling_price": 2350,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul 8100 X-cess",
+   "grade": "5W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "4 L",
+   "cost_price": 3300,
+   "selling_price": 4000,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul Brake Fluid",
+   "grade": "DOT 4",
+   "type": "Brake Fluid",
+   "pack": "500 ml",
+   "cost_price": 260,
+   "selling_price": 350,
+   "hsn_code": "3819"
+  },
+  {
+   "brand": "Motul",
+   "name": "Motul Gear 300",
+   "grade": "75W-90",
+   "type": "Gear Oil (Synthetic)",
+   "pack": "1 L",
+   "cost_price": 1100,
+   "selling_price": 1400,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo Super",
+   "grade": "20W-40",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 950,
+   "selling_price": 1200,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo Futura",
+   "grade": "15W-40",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1050,
+   "selling_price": 1300,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo Futura Synth",
+   "grade": "5W-30",
+   "type": "Engine Oil (Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1950,
+   "selling_price": 2400,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 260,
+   "selling_price": 340,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo Gear HP",
+   "grade": "80W-90",
+   "type": "Gear Oil",
+   "pack": "1 L",
+   "cost_price": 280,
+   "selling_price": 370,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Servo (IOCL)",
+   "name": "Servo Kool",
+   "grade": "Ready-to-use",
+   "type": "Coolant",
+   "pack": "1 L",
+   "cost_price": 200,
+   "selling_price": 280,
+   "hsn_code": "3820"
+  },
+  {
+   "brand": "HP Lubricants",
+   "name": "HP Milcy",
+   "grade": "20W-40",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 950,
+   "selling_price": 1200,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "HP Lubricants",
+   "name": "HP Racer 4",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 260,
+   "selling_price": 340,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "HP Lubricants",
+   "name": "HP Racer Synth",
+   "grade": "10W-30",
+   "type": "Engine Oil (2W Synthetic)",
+   "pack": "1 L",
+   "cost_price": 450,
+   "selling_price": 570,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "HP Lubricants",
+   "name": "HP Gear Oil",
+   "grade": "80W-90",
+   "type": "Gear Oil",
+   "pack": "1 L",
+   "cost_price": 270,
+   "selling_price": 360,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Gulf",
+   "name": "Gulf Pride 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 280,
+   "selling_price": 360,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Gulf",
+   "name": "Gulf Pride 4T Plus",
+   "grade": "10W-30",
+   "type": "Engine Oil (2W Semi-Synthetic)",
+   "pack": "1 L",
+   "cost_price": 420,
+   "selling_price": 530,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Gulf",
+   "name": "Gulf Formula G",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2200,
+   "selling_price": 2700,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Gulf",
+   "name": "Gulf Max",
+   "grade": "20W-50",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1050,
+   "selling_price": 1300,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Valvoline",
+   "name": "Valvoline All Fleet",
+   "grade": "15W-40",
+   "type": "Engine Oil (Diesel)",
+   "pack": "5 L",
+   "cost_price": 1700,
+   "selling_price": 2100,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Valvoline",
+   "name": "Valvoline SynPower",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2350,
+   "selling_price": 2900,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Valvoline",
+   "name": "Valvoline 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 300,
+   "selling_price": 390,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Valvoline",
+   "name": "Valvoline Brake Fluid",
+   "grade": "DOT 3",
+   "type": "Brake Fluid",
+   "pack": "500 ml",
+   "cost_price": 190,
+   "selling_price": 260,
+   "hsn_code": "3819"
+  },
+  {
+   "brand": "Liqui Moly",
+   "name": "Liqui Moly Molygen",
+   "grade": "5W-30",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "4 L",
+   "cost_price": 3500,
+   "selling_price": 4300,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Liqui Moly",
+   "name": "Liqui Moly Top Tec 4100",
+   "grade": "5W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "4 L",
+   "cost_price": 3800,
+   "selling_price": 4700,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Liqui Moly",
+   "name": "Liqui Moly Street 4T",
+   "grade": "10W-40",
+   "type": "Engine Oil (2W Synthetic)",
+   "pack": "1 L",
+   "cost_price": 850,
+   "selling_price": 1050,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Total / TotalEnergies",
+   "name": "Total Quartz 5000",
+   "grade": "20W-50",
+   "type": "Engine Oil (Mineral)",
+   "pack": "3.5 L",
+   "cost_price": 1100,
+   "selling_price": 1400,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Total / TotalEnergies",
+   "name": "Total Quartz 7000",
+   "grade": "10W-40",
+   "type": "Engine Oil (Semi-Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 1750,
+   "selling_price": 2150,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Total / TotalEnergies",
+   "name": "Total Quartz 9000",
+   "grade": "5W-40",
+   "type": "Engine Oil (Fully Synthetic)",
+   "pack": "3.5 L",
+   "cost_price": 2700,
+   "selling_price": 3300,
+   "hsn_code": "2710"
+  },
+  {
+   "brand": "Total / TotalEnergies",
+   "name": "Total Hi-Perf 4T",
+   "grade": "20W-40",
+   "type": "Engine Oil (2W)",
+   "pack": "1 L",
+   "cost_price": 300,
+   "selling_price": 390,
+   "hsn_code": "2710"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GMS — Offline</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+           gap: 12px; padding: 24px; text-align: center; background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; }
+    h1 { color: #fde047; font-size: 22px; margin: 0; }
+    p { margin: 0; color: #94a3b8; max-width: 320px; }
+    button { margin-top: 12px; padding: 12px 28px; border: 0; border-radius: 12px; background: #38bdf8;
+             color: #0f172a; font-weight: 600; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>No internet connection</h1>
+  <p>GMS needs the internet to load your garage data. Check your mobile data or Wi-Fi and try again.</p>
+  <!-- __APP_URL__ is replaced with the server URL by the build workflow -->
+  <button onclick="location.href = '__APP_URL__'">Try again</button>
+</body>
+</html>

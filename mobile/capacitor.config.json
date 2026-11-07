@@ -1,0 +1,14 @@
+{
+  "appId": "in.gms.garage",
+  "appName": "GMS Garage",
+  "webDir": "www",
+  "server": {
+    "url": "https://139-59-42-240.sslip.io",
+    "errorPath": "offline.html",
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0f172a"
+  }
+}

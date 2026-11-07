@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { ShieldCheck, LayoutDashboard, Building2, LogOut, Menu, X } from "lucide-react";
+import { ShieldCheck, LayoutDashboard, Building2, Boxes, LogOut, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import api from "@/lib/api";
 import { toast } from "sonner";
@@ -10,6 +10,7 @@ import { toast } from "sonner";
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/admin/garages", label: "Garages", icon: Building2, exact: false },
+  { href: "/admin/catalog", label: "Catalog", icon: Boxes, exact: false },
 ];
 
 export default function AdminPanelLayout({ children }: { children: React.ReactNode }) {

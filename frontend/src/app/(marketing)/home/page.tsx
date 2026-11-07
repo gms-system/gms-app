@@ -369,6 +369,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ============ GET THE APP ============ */}
+      <section id="app" className="scroll-mt-20 py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-10 overflow-hidden rounded-3xl bg-gradient-to-br from-sky-500 to-sky-700 p-8 text-white sm:p-12 lg:grid-cols-2">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-yellow-300 px-3 py-1 text-xs font-bold text-slate-900">
+                <Smartphone className="h-3.5 w-3.5" /> Android app
+              </span>
+              <h2 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl">Run your garage from your phone</h2>
+              <p className="mt-4 text-lg text-sky-50">
+                Job cards, bills and stock in your pocket. Send invoices on WhatsApp in one tap.
+                The app updates itself, and new car models and parts arrive automatically every day.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="/downloads/gms.apk" download
+                  className="inline-flex items-center gap-2 rounded-xl bg-yellow-300 px-6 py-3 font-bold text-slate-900 shadow-lg hover:bg-yellow-200">
+                  <Smartphone className="h-5 w-5" /> Download for Android
+                </a>
+                <Link href="/login" className="inline-flex items-center gap-2 rounded-xl border border-white/40 px-6 py-3 font-semibold hover:bg-white/10">
+                  Use in browser <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+              <p className="mt-4 text-xs text-sky-100">
+                Android 7.0 or later. If your phone asks, allow &quot;Install unknown apps&quot; for your browser, then tap the downloaded file.
+                On iPhone, open this site in Safari → Share → Add to Home Screen.
+              </p>
+            </div>
+            <ul className="space-y-3 text-sm">
+              {[
+                "Share invoices & job card status on WhatsApp — straight to the customer's number",
+                "Automatic updates — new features reach you without reinstalling",
+                "Daily catalog sync — latest car makes, models, spare parts & lubes",
+                "Works on low-cost phones, light on data",
+              ].map((f) => (
+                <li key={f} className="flex items-start gap-3 rounded-xl bg-white/10 p-4">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-yellow-300" /> {f}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ============ ABOUT ============ */}
       <section id="about" className="scroll-mt-20 py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">

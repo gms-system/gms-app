@@ -8,6 +8,8 @@ import { formatINR, formatDate } from "@/lib/utils";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { InvoicePrint } from "@/components/invoice-print";
+import { shareOnWhatsApp, openPrintableCopy } from "@/lib/share";
+import { isNativeApp } from "@/lib/native";
 
 const PAYMENT_MODES = ["cash", "upi", "card", "bank_transfer", "credit"] as const;
 
@@ -88,10 +90,10 @@ function PaymentModal({ invoiceId, amountDue, onClose }: { invoiceId: string; am
 }
 
 // ─── WhatsApp share helper ─────────────────────────────────────────────────────
-function buildWhatsAppMessage(inv: any, garageName?: string): string {
+function buildWhatsAppMessage(inv: any, garageName: string, link: string): string {
   const paid = Number(inv.amount_due) <= 0;
   const lines = [
-    `*${garageName || "Garage"} — Invoice*`,
+    `*${garageName} — Invoice*`,
     ``,
     `Invoice No: *${inv.invoice_number}*`,
     `Date: ${inv.invoice_date}`,
@@ -102,6 +104,9 @@ function buildWhatsAppMessage(inv: any, garageName?: string): string {
     paid
       ? `Status: ✅ *PAID*`
       : `Amount Due: *${Number(inv.amount_due).toLocaleString("en-IN", { style: "currency", currency: "INR" })}*`,
+    ``,
+    `View / download your invoice:`,
+    link,
     ``,
     `Thank you for choosing us! 🙏`,
   ];
@@ -146,13 +151,13 @@ export default function InvoiceDetailPage() {
   const isPaid = inv.amount_due <= 0 && !inv.is_cancelled;
   const isPartial = inv.amount_due > 0 && inv.amount_paid > 0 && !inv.is_cancelled;
 
-  const handlePrint = () => window.print();
+  const handlePrint = () => isNativeApp()
+    ? openPrintableCopy("invoice", id).catch(() => toast.error("Could not open the printable copy"))
+    : window.print();
 
-  const handleWhatsApp = () => {
-    const msg = buildWhatsAppMessage(inv, settings?.garage_name);
-    const url = `https://wa.me/?text=${encodeURIComponent(msg)}`;
-    window.open(url, "_blank");
-  };
+  const handleWhatsApp = () =>
+    shareOnWhatsApp("invoice", id, (link, { garageName }) => buildWhatsAppMessage(inv, garageName, link))
+      .catch(() => toast.error("Could not create the share link"));
 
   return (
     <div className="max-w-3xl mx-auto space-y-6">

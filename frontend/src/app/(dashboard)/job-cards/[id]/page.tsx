@@ -5,10 +5,11 @@ import { useParams, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import {
   ArrowLeft, ChevronRight, Clock, Camera, Users,
-  Wrench, FileText, CheckCircle2, Loader2, X, Receipt, FilePlus
+  Wrench, FileText, CheckCircle2, Loader2, X, Receipt, FilePlus, Share2
 } from "lucide-react";
 import Link from "next/link";
 import api from "@/lib/api";
+import { shareOnWhatsApp } from "@/lib/share";
 import {
   cn, formatDate, formatDateTime,
   JOB_CARD_STATUS_LABELS, JOB_CARD_STATUS_COLORS
@@ -202,15 +203,37 @@ export default function JobCardDetailPage() {
           </div>
         </div>
 
-        {!isDelivered && (
+        <div className="flex items-center gap-2 flex-wrap">
           <button
-            onClick={() => setShowStatusModal(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90"
+            onClick={() =>
+              shareOnWhatsApp("job_card", id, (link, { garageName, customerName }) => [
+                `*${garageName} — Job Card*`,
+                ``,
+                `Hello ${customerName || ""} 🙏`,
+                `Job Card No: *${jc.job_card_number}*`,
+                `Status: *${JOB_CARD_STATUS_LABELS[jc.status] ?? jc.status}*`,
+                jc.expected_delivery_date ? `Expected delivery: ${formatDate(jc.expected_delivery_date)}` : ``,
+                ``,
+                `Track your vehicle here:`,
+                link,
+              ].filter((l, i, a) => l !== `` || a[i - 1] !== ``).join("\n"))
+                .catch(() => toast.error("Could not create the share link"))
+            }
+            className="flex items-center gap-2 px-4 py-2 text-sm rounded-lg border border-green-300 bg-green-50 text-green-700 hover:bg-green-100 dark:bg-green-900/20 dark:border-green-800 dark:text-green-400"
           >
-            <Wrench className="w-4 h-4" />
-            Update Status
+            <Share2 className="w-4 h-4" />
+            WhatsApp
           </button>
-        )}
+          {!isDelivered && (
+            <button
+              onClick={() => setShowStatusModal(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90"
+            >
+              <Wrench className="w-4 h-4" />
+              Update Status
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Status Stepper */}

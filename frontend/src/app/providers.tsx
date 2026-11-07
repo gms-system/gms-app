@@ -3,6 +3,13 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState, useEffect } from "react";
 import { Toaster } from "sonner";
 import { useUIStore } from "@/store/ui-store";
+import { useCatalogAutoSync } from "@/store/catalog-store";
+import { AppUpdateChecker } from "@/components/native/app-update-checker";
+
+function CatalogSync() {
+  useCatalogAutoSync();
+  return null;
+}
 
 function ThemeApplier() {
   const { theme } = useUIStore();
@@ -33,6 +40,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeApplier />
+      <CatalogSync />
+      <AppUpdateChecker />
       {children}
       <Toaster richColors position="top-right" />
     </QueryClientProvider>

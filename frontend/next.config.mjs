@@ -10,6 +10,9 @@ const nextConfig = {
     NEXT_PUBLIC_API_URL:
       process.env.NEXT_PUBLIC_API_URL ||
       (process.env.NODE_ENV === "development" ? "http://localhost:8080/api" : "/api"),
+    // Unique per build; /app-version returns the server's value so open
+    // clients can detect a new deployment and offer a reload.
+    NEXT_PUBLIC_BUILD_ID: process.env.BUILD_ID || String(Date.now()),
   },
   // Serve the service worker with correct headers
   async headers() {

@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { href: "#gallery", label: "Gallery" },
   { href: "#videos", label: "How it works" },
   { href: "#pricing", label: "Pricing" },
+  { href: "#app", label: "Android App" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
