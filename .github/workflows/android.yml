@@ -51,12 +51,26 @@ jobs:
 
       - name: Check signing secrets
         env:
-          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
-          if [ -z "$KS" ]; then
-            echo "::error::ANDROID_KEYSTORE_BASE64 secret is missing. Run mobile/scripts/create-keystore.sh and add the secrets."
-            exit 1
-          fi
+          # Prints only set/missing + length — never the values.
+          missing=0
+          for name in ANDROID_KEYSTORE_BASE64 ANDROID_KEYSTORE_PASSWORD ANDROID_KEY_ALIAS ANDROID_KEY_PASSWORD; do
+            value="${!name}"
+            if [ -z "$value" ]; then
+              echo "::error::$name — MISSING (add it under Settings → Secrets and variables → Actions → Repository secrets)"
+              missing=1
+            else
+              echo "$name — set (${#value} characters)"
+            fi
+          done
+          [ "$missing" = 0 ] || exit 1
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > /dev/null 2>&1 \
+            || { echo "::error::ANDROID_KEYSTORE_BASE64 is not valid base64 — paste the whole line from gms-release.jks.base64"; exit 1; }
+          echo "All signing secrets look good."
 
       - name: Install Capacitor (only versions published 7+ days ago)
         run: npm install --no-audit --no-fund --before="$(date -u -d '7 days ago' +%Y-%m-%d)"
