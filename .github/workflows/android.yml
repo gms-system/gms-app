@@ -68,9 +68,20 @@ jobs:
             fi
           done
           [ "$missing" = 0 ] || exit 1
-          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > /dev/null 2>&1 \
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/check.jks" 2>/dev/null \
             || { echo "::error::ANDROID_KEYSTORE_BASE64 is not valid base64 — paste the whole line from gms-release.jks.base64"; exit 1; }
-          echo "All signing secrets look good."
+          if ! keytool -list -keystore "$RUNNER_TEMP/check.jks" -storetype PKCS12 -storepass:env ANDROID_KEYSTORE_PASSWORD > /dev/null 2>&1; then
+            rm -f "$RUNNER_TEMP/check.jks"
+            echo "::error::ANDROID_KEYSTORE_PASSWORD does not open the keystore — re-type it in the secret (no spaces / line breaks)"
+            exit 1
+          fi
+          if ! keytool -list -keystore "$RUNNER_TEMP/check.jks" -storetype PKCS12 -storepass:env ANDROID_KEYSTORE_PASSWORD -alias "$ANDROID_KEY_ALIAS" > /dev/null 2>&1; then
+            rm -f "$RUNNER_TEMP/check.jks"
+            echo "::error::ANDROID_KEY_ALIAS not found in the keystore — it should be: gms"
+            exit 1
+          fi
+          rm -f "$RUNNER_TEMP/check.jks"
+          echo "All signing secrets look good (keystore opens, alias found)."
 
       - name: Install Capacitor (only versions published 7+ days ago)
         run: npm install --no-audit --no-fund --before="$(date -u -d '7 days ago' +%Y-%m-%d)"
