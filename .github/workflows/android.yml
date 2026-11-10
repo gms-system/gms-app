@@ -89,9 +89,13 @@ jobs:
       - name: Generate Android project
         run: npx cap add android
 
+      # Uses assets/icon-only.png, icon-foreground.png and icon-background.png
+      # (adaptive icons need the background *image*, not just a colour).
       - name: App icons
-        continue-on-error: true
-        run: npx capacitor-assets generate --android --iconBackgroundColor '#38bdf8' --iconBackgroundColorDark '#38bdf8' --splashBackgroundColor '#0f172a' --splashBackgroundColorDark '#0f172a'
+        run: |
+          npx capacitor-assets generate --android --splashBackgroundColor '#0f172a' --splashBackgroundColorDark '#0f172a'
+          ls android/app/src/main/res/mipmap-xxxhdpi/
+          test -f android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png
 
       - name: Sync
         run: npx cap sync android
