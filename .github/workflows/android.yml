@@ -111,6 +111,15 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
+      # Voice job cards: microphone permission + Android 11+ visibility of the
+      # Google speech service (needed by the speech-recognition plugin).
+      - name: Speech recognition permissions
+        run: |
+          f=android/app/src/main/AndroidManifest.xml
+          grep -q 'RECORD_AUDIO' "$f" || sed -i 's#</manifest>#    <uses-permission android:name="android.permission.RECORD_AUDIO" />\n</manifest>#' "$f"
+          grep -q 'android.speech.RecognitionService' "$f" || sed -i 's#</manifest>#    <queries>\n        <intent><action android:name="android.speech.RecognitionService" /></intent>\n        <intent><action android:name="android.speech.action.RECOGNIZE_SPEECH" /></intent>\n    </queries>\n</manifest>#' "$f"
+          cat "$f"
+
       - name: Set version ${{ env.VERSION_NAME }} (${{ env.VERSION_CODE }})
         run: |
           f=android/app/build.gradle

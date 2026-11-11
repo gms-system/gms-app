@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { Loader2, Save } from "lucide-react";
 import api from "@/lib/api";
 import { useEffect } from "react";
+import { VoiceLanguageSelect } from "@/components/voice/language-picker";
 
 export default function SettingsPage() {
   const qc = useQueryClient();
@@ -45,6 +46,14 @@ export default function SettingsPage() {
       <div>
         <h1 className="text-2xl font-bold">Settings</h1>
         <p className="text-muted-foreground text-sm mt-1">Garage profile and configuration</p>
+      </div>
+
+      <div className="bg-card border border-border rounded-xl p-6 flex items-center justify-between gap-4 flex-wrap">
+        <div>
+          <h2 className="font-semibold">Voice language</h2>
+          <p className="text-sm text-muted-foreground mt-0.5">Language for voice job cards on this device</p>
+        </div>
+        <VoiceLanguageSelect />
       </div>
 
       <div className="bg-card border border-border rounded-xl p-6">

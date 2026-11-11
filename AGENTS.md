@@ -16,4 +16,8 @@
 - The office network intercepts TLS: `npm install` / Android SDK downloads fail locally. Build the APK with GitHub Actions (`.github/workflows/android.yml`).
 - Catalog (makes/models/parts/lubes) lives in DB table `catalog_items`; `frontend/src/lib/india-vehicles.ts` + `parts-catalog.ts` are only the offline fallback. Re-export seed with `node scripts/export-catalog-seed.js`.
 - Android WebView has no `window.print()` — use `openPrintableCopy()` from `lib/share.ts` in the native app.
+- Voice job card: `frontend/src/lib/voice/` (languages, strings, speech, parse) + `/job-cards/voice` page + `POST /job-cards/quick`.
+  New language = entry in `languages.ts` + strings in `strings.ts` + spoken digit/work words in `parse.ts`.
+  Native speech uses `@capgo/capacitor-speech-recognition` via `window.Capacitor.Plugins.SpeechRecognition` (needs a new APK).
+  Default work lists: `backend/app/services/default_work.py`.
 - Commits: author `Krishna <gmsapplicaiton@gmail.com>` (pass with `git -c user.name=... -c user.email=...`).

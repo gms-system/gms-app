@@ -2,16 +2,19 @@ from fastapi import APIRouter, Depends, HTTPException, Query, UploadFile, File, 
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func, or_
 from sqlalchemy.orm import selectinload
-from typing import Optional, List
-from pydantic import BaseModel
+from typing import Optional, List, Literal
+from pydantic import BaseModel, Field, field_validator
 from datetime import datetime, date
-import os, shutil, uuid
+import os, re, shutil, uuid
 
 from app.database import get_db
 from app.models.job_card import JobCard, JobCardStatus, JobCardStatusHistory, JobCardPhoto, JobCardTechnician
+from app.models.customer import Customer
+from app.models.vehicle import Vehicle
 from app.models.employee import Employee
+from app.services.default_work import WorkType, WORK_TYPE_LABELS, default_work_items
 from app.utils.dependencies import get_current_user, get_garage_id, require_manager, require_service_advisor
-from app.utils.number_generator import generate_job_card_number
+from app.utils.number_generator import generate_job_card_number, generate_customer_code
 from app.config import settings
 
 router = APIRouter(prefix="/job-cards", tags=["Job Cards"])
@@ -33,6 +36,39 @@ class StatusChangeRequest(BaseModel):
     notes: Optional[str] = None
 
 
+class QuickJobCardCreate(BaseModel):
+    """Minimal job card from the voice / quick flow. Customer + vehicle are found or created."""
+    customer_name: str = Field(min_length=1, max_length=200)
+    mobile: str
+    vehicle_make: str = Field(min_length=1, max_length=100)
+    vehicle_model: str = Field(min_length=1, max_length=100)
+    registration_number: str
+    work_type: WorkType
+    work_items: Optional[List[str]] = None
+    source: Literal["voice", "quick"] = "voice"
+    language: Optional[str] = None
+    transcript: Optional[dict] = None
+
+    @field_validator("mobile")
+    @classmethod
+    def _mobile(cls, v: str) -> str:
+        digits = re.sub(r"\D", "", v)
+        if len(digits) == 12 and digits.startswith("91"):
+            digits = digits[2:]
+        digits = digits.lstrip("0") if len(digits) == 11 else digits
+        if not re.fullmatch(r"[6-9]\d{9}", digits):
+            raise ValueError("Enter a valid 10-digit mobile number")
+        return digits
+
+    @field_validator("registration_number")
+    @classmethod
+    def _reg(cls, v: str) -> str:
+        reg = re.sub(r"[^A-Za-z0-9]", "", v).upper()
+        if not 4 <= len(reg) <= 13:
+            raise ValueError("Enter a valid vehicle number")
+        return reg
+
+
 def jc_to_dict(jc: JobCard) -> dict:
     return {
         "id": str(jc.id),
@@ -48,6 +84,9 @@ def jc_to_dict(jc: JobCard) -> dict:
         "expected_delivery_date": jc.expected_delivery_date.isoformat() if jc.expected_delivery_date else None,
         "actual_delivery_date": jc.actual_delivery_date.isoformat() if jc.actual_delivery_date else None,
         "internal_notes": jc.internal_notes,
+        "work_type": jc.work_type,
+        "work_items": jc.work_items or [],
+        "source": jc.source,
         "created_at": jc.created_at.isoformat() if jc.created_at else None,
         "updated_at": jc.updated_at.isoformat() if jc.updated_at else None,
     }
@@ -113,6 +152,94 @@ async def create_job_card(
     await db.flush()
     await db.refresh(jc)
     return {"success": True, "data": jc_to_dict(jc)}
+
+
+@router.get("/default-work")
+async def get_default_work(
+    work_type: WorkType,
+    make: str = "",
+    model: str = "",
+    _: Employee = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db),
+):
+    """Default work list for the quick / voice job card review screen."""
+    return {"success": True, "data": {
+        "work_type": work_type,
+        "label": WORK_TYPE_LABELS[work_type],
+        "items": await default_work_items(db, work_type, make, model),
+    }}
+
+
+@router.post("/quick", status_code=status.HTTP_201_CREATED)
+async def create_quick_job_card(
+    data: QuickJobCardCreate,
+    current_user: Employee = Depends(get_current_user),
+    garage_id: uuid.UUID = Depends(get_garage_id),
+    db: AsyncSession = Depends(get_db),
+):
+    """
+    Voice / quick job card. Re-uses the vehicle if its number is already known
+    (keeping its owner), else re-uses the customer by mobile, else creates both.
+    """
+    vehicle = (await db.execute(
+        select(Vehicle).where(
+            Vehicle.registration_number == data.registration_number,
+            Vehicle.garage_id == garage_id, Vehicle.is_deleted == False,
+        )
+    )).scalar_one_or_none()
+    existing_vehicle = vehicle is not None
+    existing_customer = existing_vehicle
+
+    if vehicle:
+        customer = (await db.execute(select(Customer).where(Customer.id == vehicle.owner_id))).scalar_one()
+    else:
+        customer = (await db.execute(
+            select(Customer).where(
+                Customer.mobile == data.mobile, Customer.garage_id == garage_id, Customer.is_deleted == False,
+            )
+        )).scalar_one_or_none()
+        existing_customer = customer is not None
+        if not customer:
+            customer = Customer(
+                customer_code=await generate_customer_code(db),
+                garage_id=garage_id, name=data.customer_name.strip(), mobile=data.mobile,
+                created_by=current_user.id,
+            )
+            db.add(customer)
+            await db.flush()
+        vehicle = Vehicle(
+            garage_id=garage_id, registration_number=data.registration_number,
+            make=data.vehicle_make.strip(), model=data.vehicle_model.strip(),
+            owner_id=customer.id, created_by=current_user.id,
+        )
+        db.add(vehicle)
+        await db.flush()
+
+    items = [i.strip() for i in (data.work_items or []) if i.strip()] \
+        or await default_work_items(db, data.work_type, vehicle.make, vehicle.model)
+
+    jc = JobCard(
+        job_card_number=await generate_job_card_number(db),
+        garage_id=garage_id, vehicle_id=vehicle.id, customer_id=customer.id,
+        customer_complaint=WORK_TYPE_LABELS[data.work_type],
+        work_type=data.work_type, work_items=items, source=data.source,
+        voice_transcript={"language": data.language, "steps": data.transcript} if data.transcript else None,
+        created_by=current_user.id,
+    )
+    db.add(jc)
+    await db.flush()
+    db.add(JobCardStatusHistory(
+        job_card_id=jc.id, old_status=None, new_status=JobCardStatus.received, changed_by=current_user.id,
+        notes="Job card created by voice" if data.source == "voice" else "Quick job card created",
+    ))
+    await db.flush()
+    await db.refresh(jc)
+    return {"success": True, "data": {
+        **jc_to_dict(jc),
+        "customer_name": customer.name, "customer_mobile": customer.mobile,
+        "vehicle": {"registration_number": vehicle.registration_number, "make": vehicle.make, "model": vehicle.model},
+        "existing_customer": existing_customer, "existing_vehicle": existing_vehicle,
+    }}
 
 
 @router.get("/{job_card_id}")

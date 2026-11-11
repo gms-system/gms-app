@@ -3,7 +3,7 @@ import enum
 from datetime import date, datetime
 from typing import Optional
 from sqlalchemy import String, Text, Integer, Date, DateTime, ForeignKey, Enum as SAEnum
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.database import Base
 from app.models.base import TimestampMixin, SoftDeleteMixin
@@ -35,6 +35,10 @@ class JobCard(Base, TimestampMixin, SoftDeleteMixin):
     expected_delivery_date: Mapped[Optional[date]] = mapped_column(Date)
     actual_delivery_date: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
     internal_notes: Mapped[Optional[str]] = mapped_column(Text)
+    work_type: Mapped[Optional[str]] = mapped_column(String(20))
+    work_items: Mapped[Optional[list]] = mapped_column(JSONB)
+    source: Mapped[str] = mapped_column(String(20), default="manual", server_default="manual", nullable=False)
+    voice_transcript: Mapped[Optional[dict]] = mapped_column(JSONB)
     created_by: Mapped[Optional[uuid.UUID]] = mapped_column(UUID(as_uuid=True), ForeignKey("employees.id"))
 
     vehicle: Mapped["Vehicle"] = relationship("Vehicle", back_populates="job_cards")

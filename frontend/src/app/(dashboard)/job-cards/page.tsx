@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
-import { Plus, Search, Grid3X3, Table2, ChevronRight, Loader2, X, Car } from "lucide-react";
+import { Plus, Search, Grid3X3, Table2, ChevronRight, Loader2, X, Car, Mic } from "lucide-react";
 import Link from "next/link";
 import api from "@/lib/api";
 import { cn, formatDate, JOB_CARD_STATUS_LABELS, JOB_CARD_STATUS_COLORS } from "@/lib/utils";
@@ -246,6 +246,13 @@ export default function JobCardsPage() {
               <Grid3X3 className="w-4 h-4" />
             </button>
           </div>
+          <Link
+            href="/job-cards/voice"
+            className="flex items-center gap-2 px-4 py-2 border border-primary text-primary rounded-lg text-sm font-medium hover:bg-primary/10"
+          >
+            <Mic className="w-4 h-4" />
+            Voice
+          </Link>
           <button
             onClick={() => setShowModal(true)}
             className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90"

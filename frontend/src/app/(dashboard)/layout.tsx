@@ -8,6 +8,7 @@ import { Sidebar } from "@/components/layout/sidebar";
 import { Header } from "@/components/layout/header";
 import { PWAInstallBanner } from "@/components/pwa/install-banner";
 import { SubscriptionBanner } from "@/components/subscription-banner";
+import { VoiceLanguagePrompt } from "@/components/voice/language-picker";
 import { cn } from "@/lib/utils";
 import {
   LayoutDashboard, Users, ClipboardList, Receipt, Package,
@@ -78,6 +79,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
       {/* PWA install prompt (shows on Android Chrome automatically) */}
       <PWAInstallBanner />
+
+      {/* First launch: choose voice language (English / Hindi) */}
+      <VoiceLanguagePrompt />
     </div>
   );
 }

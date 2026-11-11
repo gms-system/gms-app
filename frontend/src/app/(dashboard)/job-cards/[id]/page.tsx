@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import {
   ArrowLeft, ChevronRight, Clock, Camera, Users,
-  Wrench, FileText, CheckCircle2, Loader2, X, Receipt, FilePlus, Share2
+  Wrench, FileText, CheckCircle2, Loader2, X, Receipt, FilePlus, Share2, Mic, ListChecks
 } from "lucide-react";
 import Link from "next/link";
 import api from "@/lib/api";
@@ -199,7 +199,14 @@ export default function JobCardDetailPage() {
                 {JOB_CARD_STATUS_LABELS[jc.status]}
               </span>
             </div>
-            <p className="text-muted-foreground text-sm mt-0.5">Created {formatDateTime(jc.created_at)}</p>
+            <p className="text-muted-foreground text-sm mt-0.5 flex items-center gap-2 flex-wrap">
+              Created {formatDateTime(jc.created_at)}
+              {jc.source === "voice" && (
+                <span className="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                  <Mic className="w-3 h-3" /> Voice
+                </span>
+              )}
+            </p>
           </div>
         </div>
 
@@ -241,6 +248,25 @@ export default function JobCardDetailPage() {
         <h2 className="text-sm font-medium text-muted-foreground mb-3">Progress</h2>
         <StatusStepper current={jc.status} />
       </div>
+
+      {/* Work type + default work (quick / voice job cards) */}
+      {(jc.work_type || jc.work_items?.length > 0) && (
+        <div className="bg-card border border-border rounded-xl p-5">
+          <h2 className="font-semibold flex items-center gap-2 mb-3">
+            <ListChecks className="w-4 h-4" /> Work
+            {jc.work_type && (
+              <span className="text-xs px-2 py-0.5 rounded-full bg-muted font-medium capitalize">{jc.work_type}</span>
+            )}
+          </h2>
+          <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm">
+            {(jc.work_items ?? []).map((item: string) => (
+              <li key={item} className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 mt-0.5 text-muted-foreground shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {/* ── Billing Actions ── */}
       <div className="bg-card border border-border rounded-xl p-5">
